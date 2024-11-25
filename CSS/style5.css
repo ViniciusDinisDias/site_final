@@ -1,0 +1,115 @@
+/* Estilos básicos */
+body {
+    background-image: url('Image/fundoavaliacao1.jpg');
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #9932CC;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #f3ebeb;
+    margin-bottom: 20px;
+}
+
+/* Container da avaliação */
+.avaliacao-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #4B0082;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estrelas */
+.estrelas {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.estrelas input {
+    display: none;
+}
+
+.estrelas label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.estrelas input:checked ~ label,
+.estrelas input:hover ~ label {
+    color: #FFD700;
+}
+
+.estrelas label:hover ~ label {
+    color: #FFD700;
+}
+
+/* Campo de texto */
+textarea {
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    resize: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão de envio */
+button {
+    display: block;
+    width: 100%;
+    background-color: #8A2BE2;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF00FF;
+}
+
+@media (max-width: 768px) {
+    .avaliacao-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

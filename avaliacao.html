@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Site</title>
+    <link rel="stylesheet" href="CSS/style5.css">
+</head>
+<body  style="background-image: url('Image/fundoavaliacao1.jpg');">
+    <header>
+        <h1>Avaliação do Site</h1>
+    </header>
+
+    <main>
+        <section class="avaliacao-container">
+            <h2>Deixe sua opinião!</h2>
+            <p>Ajude-nos a melhorar avaliando o site com estrelas e um comentário sincero.</p>
+
+            <form class="avaliacao-form">
+                <!-- Estrelas de avaliação -->
+                <div class="estrelas">
+                    <input type="radio" id="estrela-5" name="avaliacao" value="5">
+                    <label for="estrela-5" class="estrela">&#9733;</label>
+                    
+                    <input type="radio" id="estrela-4" name="avaliacao" value="4">
+                    <label for="estrela-4" class="estrela">&#9733;</label>
+                    
+                    <input type="radio" id="estrela-3" name="avaliacao" value="3">
+                    <label for="estrela-3" class="estrela">&#9733;</label>
+                    
+                    <input type="radio" id="estrela-2" name="avaliacao" value="2">
+                    <label for="estrela-2" class="estrela">&#9733;</label>
+                    
+                    <input type="radio" id="estrela-1" name="avaliacao" value="1">
+                    <label for="estrela-1" class="estrela">&#9733;</label>
+                </div>
+
+                <!-- Campo de texto para feedback -->
+                <textarea name="comentario" rows="5" placeholder="Escreva aqui o que achou do site..." required></textarea>
+
+                <!-- Botão de envio -->
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

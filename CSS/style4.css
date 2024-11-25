@@ -1,0 +1,145 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    /* Define a fonte padrão */
+    margin: 0;
+    /* Remove a margem padrão */
+    padding: 0;
+    /* Remove o padding padrão */
+    background-color: #A020F0;
+    /* Define o fundo da página */
+    color: #333;
+    /* Define a cor do texto */
+}
+
+header {
+    background-color: #4B0082;
+    /* Define a cor de fundo do cabeçalho */
+    color: white;
+    /* Define a cor do texto do cabeçalho */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 20px 0;
+    /* Adiciona espaço interno ao cabeçalho */
+}
+
+h1 {
+    margin: 0;
+    /* Remove margens do título */
+    font-size: 2.5rem;
+    /* Define o tamanho da fonte do título */
+}
+
+/* Introdução */
+.introducao {
+    padding: 20px;
+    /* Adiciona espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 1.2rem;
+    /* Define o tamanho da fonte */
+    color: #555;
+    /* Cor do texto */
+    background: #EE82EE;
+    /* Fundo em verde claro */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo da introdução */
+    border-left: 4px solid 	#DDA0DD;
+    /* Barra decorativa à esquerda */
+}
+
+/* Container das bibliotecas */
+.bibliotecas-container {
+    display: flex;
+    /* Ativa o layout flexbox */
+    flex-wrap: wrap;
+    /* Permite que os itens "quebrem linha" */
+    justify-content: center;
+    /* Centraliza os itens no container */
+    gap: 20px;
+    /* Define o espaçamento entre os itens */
+    padding: 20px;
+    /* Adiciona espaçamento interno */
+}
+
+/* Estilo dos cards de biblioteca */
+.biblioteca {
+    display: flex;
+    /* Exibe a imagem e o texto lado a lado */
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+    background: white;
+    /* Fundo branco para o card */
+    border: 1px solid #ddd;
+    /* Adiciona uma borda fina ao redor do card */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    padding: 20px;
+    /* Espaçamento interno */
+    max-width: 500px;
+    /* Limita a largura do card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra leve */
+}
+
+.biblioteca img {
+    max-width: 100px;
+    /* Limita a largura máxima da imagem */
+    max-height: 100px;
+    /* Limita a altura máxima da imagem */
+    margin-right: 15px;
+    /* Adiciona espaço entre a imagem e o texto */
+    border-radius: 8px;
+    /* Bordas arredondadas para a imagem */
+}
+
+.biblioteca h2 {
+    font-size: 1.5rem;
+    /* Tamanho da fonte para o nome da biblioteca */
+    color: 	#FF00FF;
+    /* Cor do texto */
+    margin-bottom: 10px;
+    /* Espaço abaixo do título */
+}
+
+.biblioteca p {
+    font-size: 1rem;
+    /* Tamanho da fonte do parágrafo */
+    margin-bottom: 10px;
+    /* Espaço abaixo do texto */
+    line-height: 1.5;
+    /* Altura das linhas para facilitar a leitura */
+}
+
+.biblioteca a {
+    color: #FF00FF;
+    /* Cor do link */
+    text-decoration: none;
+    /* Remove sublinhado do link */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+}
+
+.biblioteca a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .biblioteca {
+        flex-direction: column;
+        /* Empilha os elementos (imagem em cima do texto) */
+        align-items: center;
+        /* Centraliza os itens */
+        text-align: center;
+        /* Centraliza o texto */
+    }
+
+    .biblioteca img {
+        margin-right: 0;
+        /* Remove o espaço ao lado da imagem */
+        margin-bottom: 15px;
+        /* Adiciona espaço abaixo da imagem */
+    }
+}

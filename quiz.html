@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Programação</title>
+    <style>
+        body {
+            background-color: #8A2BE2;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 50px auto;
+            color: #fff;
+        }
+
+        .question {
+            margin-bottom: 25px;
+        }
+
+        .question h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .question label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            text-align: center;
+            font-size: 1.3em;
+            margin-top: 30px;
+            color: #f0f0f0;
+        }
+
+        footer {
+            text-align: center;
+            color: #fff;
+            margin-top: 50px;
+            font-size: 1em;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Quiz de Programação</h1>
+    <h2>Vamos testar seus conhecimentos?</h2>
+
+    <form id="quizForm">
+        <!-- Pergunta 1 -->
+        <div class="question">
+            <h3>1. O que é uma linguagem de programação?</h3>
+            <label><input type="radio" name="q1" value="a"> Uma linguagem para conversar com outras pessoas</label>
+            <label><input type="radio" name="q1" value="b"> Um conjunto de regras que permite que o computador execute tarefas</label>
+            <label><input type="radio" name="q1" value="c"> Um tipo de ferramenta gráfica para desenhar interfaces</label>
+            <label><input type="radio" name="q1" value="d"> Um banco de dados utilizado para armazenar informações</label>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question">
+            <h3>2. Qual dessas opções é uma linguagem de programação?</h3>
+            <label><input type="radio" name="q2" value="a"> HTML</label>
+            <label><input type="radio" name="q2" value="b"> Python</label>
+            <label><input type="radio" name="q2" value="c"> CSS</label>
+            <label><input type="radio" name="q2" value="d"> XML</label>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question">
+            <h3>3. O que significa "compilar" um código?</h3>
+            <label><input type="radio" name="q3" value="a"> Criar um novo arquivo de imagem</label>
+            <label><input type="radio" name="q3" value="b"> Traduzir o código escrito em uma linguagem de programação para uma linguagem que o computador entenda</label>
+            <label><input type="radio" name="q3" value="c"> Salvar o código em um servidor na internet</label>
+            <label><input type="radio" name="q3" value="d"> Desenhar o layout da página</label>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question">
+            <h3>4. O que é uma variável em programação?</h3>
+            <label><input type="radio" name="q4" value="a"> Um comando para exibir informações na tela</label>
+            <label><input type="radio" name="q4" value="b"> Um tipo de dado como números ou texto armazenados para uso posterior</label>
+            <label><input type="radio" name="q4" value="c"> Um arquivo onde o código é armazenado</label>
+            <label><input type="radio" name="q4" value="d"> Uma função para processar dados</label>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <div class="question">
+            <h3>5. Qual dessas linguagens é usada para criar páginas web?</h3>
+            <label><input type="radio" name="q5" value="a"> Python</label>
+            <label><input type="radio" name="q5" value="b"> HTML</label>
+            <label><input type="radio" name="q5" value="c"> C++</label>
+            <label><input type="radio" name="q5" value="d"> Java</label>
+        </div>
+
+        <!-- Pergunta 6 -->
+        <div class="question">
+            <h3>6. O que é um "loop" em programação?</h3>
+            <label><input type="radio" name="q6" value="a"> Um comando que repete um bloco de código várias vezes</label>
+            <label><input type="radio" name="q6" value="b"> Uma função para desenhar gráficos</label>
+            <label><input type="radio" name="q6" value="c"> Um tipo de banco de dados</label>
+            <label><input type="radio" name="q6" value="d"> Um comando para abrir e fechar arquivos</label>
+        </div>
+
+        <!-- Pergunta 7 -->
+        <div class="question">
+            <h3>7. Qual comando é usado para exibir uma mensagem na tela em JavaScript?</h3>
+            <label><input type="radio" name="q7" value="a"> alert()</label>
+            <label><input type="radio" name="q7" value="b"> print()</label>
+            <label><input type="radio" name="q7" value="c"> display()</label>
+            <label><input type="radio" name="q7" value="d"> message()</label>
+        </div>
+
+        <!-- Pergunta 8 -->
+        <div class="question">
+            <h3>8. O que é um "bug" em programação?</h3>
+            <label><input type="radio" name="q8" value="a"> Um tipo de erro ou problema no código</label>
+            <label><input type="radio" name="q8" value="b"> Uma ferramenta para melhorar o código</label>
+            <label><input type="radio" name="q8" value="c"> O nome de uma linguagem de programação</label>
+            <label><input type="radio" name="q8" value="d"> Uma técnica de design gráfico</label>
+        </div>
+
+        <!-- Pergunta 9 -->
+        <div class="question">
+            <h3>9. O que é um "editor de código"?</h3>
+            <label><input type="radio" name="q9" value="a"> Um programa que permite escrever e editar código fonte</label>
+            <label><input type="radio" name="q9" value="b"> Um tipo de servidor para armazenar arquivos</label>
+            <label><input type="radio" name="q9" value="c"> Uma ferramenta para compilar o código</label>
+            <label><input type="radio" name="q9" value="d"> Um ambiente para rodar o código</label>
+        </div>
+
+        <!-- Pergunta 10 -->
+        <div class="question">
+            <h3>10. O que é uma "função" em programação?</h3>
+            <label><input type="radio" name="q10" value="a"> Um bloco de código que pode ser chamado para ser executado várias vezes</label>
+            <label><input type="radio" name="q10" value="b"> Uma forma de armazenar dados em um programa</label>
+            <label><input type="radio" name="q10" value="c"> Um tipo de dado que pode armazenar números inteiros</label>
+            <label><input type="radio" name="q10" value="d"> Uma estrutura que armazena informações temporárias</label>
+        </div>
+
+        <button type="button" class="submit-btn" onclick="calculateResult()">Enviar Respostas</button>
+    </form>
+
+    <div class="result" id="resultDiv" style="display: none;"></div>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://www.exemplo.com" target="_blank">Vinicius</a></p>
+    </footer>
+
+    <script>
+        function calculateResult() {
+            var correctAnswers = {
+                q1: 'b',
+                q2: 'b',
+                q3: 'b',
+                q4: 'b',
+                q5: 'b',
+                q6: 'a',
+                q7: 'a',
+                q8: 'a',
+                q9: 'a',
+                q10: 'a'
+            };
+
+            var totalQuestions = 10;
+            var score = 0;
+
+            for (var i = 1; i <= totalQuestions; i++) {
+                var selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === correctAnswers[`q${i}`]) {
+                    score++;
+                }
+            }
+
+            var resultDiv = document.getElementById('resultDiv');
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = `Você acertou ${score} de ${totalQuestions} perguntas.`;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dúvidas</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, purple, #8d0e9e);
+            margin: 0;
+            font-family: Arial, sans-serif; /* Fonte para o texto */
+        }
+        .header-container {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os itens se ajustem */
+            justify-content: center; /* Centraliza os GIFs */
+            padding: 0 20px;
+        }
+        .h1-principal {
+            text-shadow: 0 0 15px black, 0 0 5px red;
+            color: white;
+            text-align: center;
+            font-size: 2.5rem; /* Tamanho responsivo */
+            margin-top: -50px; /* Move o título para o topo */
+        }
+        .h2 {
+            font-size: 1.5rem; /* Tamanho responsivo */
+            font-style: italic;
+            color: white;
+            text-align: center;
+            padding: 0 10px; /* Espaço lateral */
+        }
+        .container-duvidas {
+            max-width: 600px;
+            padding: 10px;
+            border: 5px solid yellow;
+            border-radius: 15px;
+            margin: 20px auto;
+            height: auto; /* Ajuste automático da altura */
+        }
+        .gif-container {
+            width: 350px;
+            height: 200px; /* Define uma altura fixa para o GIF */
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 10px; /* Espaço entre os GIFs */
+        }
+        .gif-container iframe {
+            width: 100%;
+            height: 100%; /* Ocupa toda a altura do container */
+            display: block;
+        }
+        textarea {
+            width: 100%; 
+            height: 150px;
+            background-color: #FFFAFA;
+            font-size: 1.5rem; /* Tamanho responsivo */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 320px;
+            margin: 20px auto;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            width: 100%;
+            height: 40px;
+            border-radius: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem; /* Tamanho responsivo */
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between; /* Distribui espaço entre os botões */
+            max-width: 320px; /* Largura máxima do container dos botões */
+            margin: 20px auto; /* Centraliza o container */
+        }
+        .button-container button {
+            flex: 1; /* Faz os botões ocuparem espaço igual */
+            margin: 0 5px; /* Espaço entre os botões */
+            height: 40px; /* Define a altura dos botões */
+            border-radius: 15px;
+            cursor: pointer;
+            background-color: white; /* Cor de fundo dos botões */
+            border: none; /* Remove a borda padrão */
+            color: black; /* Cor do texto */
+            font-size: 1rem; /* Tamanho responsivo */
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .h1-principal {
+                font-size: 2rem; /* Tamanho menor em telas pequenas */
+            }
+            .h2 {
+                font-size: 1.2rem; /* Tamanho menor em telas pequenas */
+            }
+            .gif-container {
+                width: 100%; /* GIF ocupa toda a largura */
+                height: auto; /* Altura automática */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="gif-container">
+            <iframe src="https://giphy.com/embed/yYewZhM1EXBkliuDTE" width="100%" height="auto" frameBorder="0" allowFullScreen></iframe>
+        </div>
+
+        <div class="gif-container">
+            <iframe src="https://giphy.com/embed/Z4P95JCt1uUN3g2Z5I" width="100%" height="auto" frameBorder="0" allowFullScreen></iframe>
+        </div>
+    </div>
+
+    <div class="h1-principal">
+        <h1>Ainda com dúvidas?</h1>
+    </div>
+
+    <div class="h2">
+        <h2 style="text-align: center;">Nesta aba você poderá nos dizer no que ficou com dúvidas, e iremos retornar com as respostas necessárias. Insira no campo abaixo e depois informe seus dados para entrarmos em contato.</h2>
+    </div>
+
+    <div class="container-duvidas">
+        <p style="font-size: 25px; font-weight: bold; text-align: center; color: white;">Diga-nos, quais são suas dúvidas?</p><br>
+        <textarea id="comentario" placeholder="Digite aqui suas dúvidas..."></textarea>
+    </div>
+
+    <form>
+        <label style="color:white; font-size: 20px;" for="nome">Digite seu nome completo:</label>
+        <input type="text" id="nome" name="nome">
+
+        <label style="color: white; font-size: 20px;" for="email">Informe seu endereço de email:</label>
+        <input type="email" id="email" name="email">
+
+        <label style="color: white; font-size: 20px;" for="aniversario">Insira sua data de nascimento:</label>
+        <input type="date" id="aniversario" name="aniversario">
+    </form>
+    <div class="button-container">
+        <button onclick="window.location.href='index.html'">Início</button>
+        <button onclick="window.location.href='https://www.exemplo.com';">Enviar</button>
+    </div>
+
+</body>
+</html>

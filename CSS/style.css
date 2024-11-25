@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, purple, #8d0e9e);
+    display: flex;
+    flex-direction: column; /* Alinha os elementos na vertical */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.h1-principal {
+    text-shadow: 0 0 3px yellow, 0 0 5px pink;
+    text-align: center;
+    font-size: 35px;
+    margin-top: -10px;
+}
+/* Estilo do Menu */
+.menu-hamburguer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding: 10px 20px;
+    background-image: url("image/codigo.jpg");
+    margin-left: 30px;
+}
+
+.menu-hamburguer .title {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+.menu-hamburguer .logo {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+}
+
+/* Botão do Menu Hamburguer */
+.menu-toggle {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.menu-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.menu-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+/* Mostrar Menu em Tela Pequena */
+.menu-hamburguer.open .menu-items {
+    display: flex;
+}
+.container {
+    display: flex; /* Permite que os elementos sejam lado a lado */
+    margin-top: 20px; /* Espaçamento acima do container */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+    justify-content: center; /* Centraliza os itens */
+}
+.caixa-texto {
+    width: 400px;
+    padding: 15px;
+    background-color: yellow;
+    box-shadow: 10px 10px;
+    text-align: left; /* Alinha o texto à esquerda dentro da caixa */
+    margin: 10px; /* Adiciona margem ao redor da caixa de texto */
+}
+.caixa-texto h1 {
+    margin: 0; /* Remove margens do título */
+    font-size: 24px; /* Tamanho do título */
+    text-align: center;
+}
+.caixa-texto p {
+    margin: 10px 0 0 0; /* Define margens para o parágrafo */
+    font-size: 20px; /* Tamanho do texto do parágrafo */
+}
+.video-container {
+    margin-left: 300px; /* Espaçamento à esquerda do vídeo */
+    margin-top: 10px; /* Espaçamento acima do vídeo */
+}
+iframe {
+    width: 450px; /* Largura do vídeo */
+    height: 290px; /* Altura do vídeo */
+    border-radius: 10px; /* Arredondar bordas do vídeo */
+}
+.descricao {
+    text-align: center; /* Centraliza o texto da descrição */
+    margin-top: 10px; /* Espaçamento acima da descrição */
+    font-size: 25px; /* Tamanho do texto da descrição */
+    color: white; /* Cor do texto da descrição */
+}
+.piscando {
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1; /* Totalmente visível */
+    }
+    50% {
+        opacity: 0; /* Invisível */
+    }
+}
+.tema {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #DA70D6;
+    flex-wrap: wrap; /* Permite que os itens se ajustem */
+}
+
+.texto {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.imagem img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Media Queries para Responsividade */
+
+
+@media (max-width: 768px) {
+    .h1-principal {
+        font-size: 28px; /* Tamanho do título menor */
+    }
+    .menu-horizontal ul li a {
+        font-size: 16px; /* Tamanho do menu menor */
+    }
+    .container {
+        flex-direction: column; /* Alinha os elementos verticalmente */
+        align-items: center; /* Centraliza os elementos */
+    }
+    .video-container {
+        margin-left: 0; /* Remove o espaço à esquerda */
+        margin-top: 20px; /* Adiciona espaço acima do vídeo */
+    }
+    .caixa-texto {
+        width: 90%; /* Largura da caixa de texto reduzida */
+        margin: 10px 0; /* Margens acima e abaixo */
+    }
+    .tema {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+    }
+    .imagem img {
+        width: 100%; /* Faz a imagem ocupar a largura total */
+        max-width: 250px; /* Limita a largura máxima */
+    }
+    .video-container iframe {
+        width: 100%; /* Faz o vídeo ocupar a largura total */
+        max-width: 450px; /* Limita a largura máxima do vídeo */
+    }
+
+}

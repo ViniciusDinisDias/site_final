@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberBlog</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <script style="background-color:purple;">alert('Bem vindo ao CyberBlog!')</script>
+
+    <nav class="menu-hamburguer">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+       
+        <div class="title">CyberBlog</div>
+
+        <img src="Image/logoo.png" alt="Logo do site" class="logo">
+        
+        <div class="menu-items">
+            <a href="linguagens.html">Linguagens</a>
+            <a href="plataformas.html">Plataformas</a>
+            <a href="bibliotecas.html">Bibliotecas</a>
+            <a href="avaliacao.html">Avaliação</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="duvidas.html">Dúvidas</a>
+        </div>
+    </nav>
+   
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu-hamburguer').classList.toggle('open');
+        }
+    </script>
+
+    <div class="h1-principal">
+        <h1>Bem-vindo ao CyberBlog</h1>
+    </div>
+    <p style=" text-align: center; font-size: 27px; font-weight: bold;" class="piscando">Preparado para conhecer o mundo da Programação? Então vamos lá!</p>
+    
+
+    <div class="container">
+        <div class="caixa-texto">
+            <h1>O que é programação?</h1>
+            <p>Programação é o processo de criar instruções que um computador pode seguir para realizar tarefas específicas. Usando linguagens de programação, como Python, JavaScript ou C++, programadores escrevem códigos que controlam o comportamento de sistemas, aplicativos e dispositivos. Através da programação, é possível automatizar processos, resolver problemas e desenvolver soluções tecnológicas eficientes.</p>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zwdWXgZ-xGM?si=GQVHHLh-GFcMC_9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="descricao">Ficou com dúvidas? Acesse o vídeo acima!</div>
+        </div>
+    </div>
+
+    <p style="text-align: center; font-size: 38px; font-weight: bold; margin-top: 100px; text-shadow: 0 0 3px blue, 0 0 5px pink;">
+        O que você verá em nosso site?
+    </p>
+    
+    <div class="tema">
+        <div class="texto">
+            <h2>Linguagens de Programação:</h2>
+            <p>Na seção de <strong>Linguagens</strong>, mergulhe no fascinante universo das linguagens de programação. Você encontrará tutoriais detalhados, guias e comparações entre as principais linguagens, como Python, JavaScript, Java, C++ e muitas outras. Aprenda sobre suas características, aplicações e descubra qual delas pode ser a mais adequada para os seus projetos.</p>
+        </div>
+        <div class="imagem">
+            <img src="Image/linguagens.jpg" alt="Imagem de linguagens de programação">
+        </div>
+    </div>
+
+    <div class="tema">
+        <div class="texto">
+            <h2>Plataformas de Desenvolvimento:</h2>
+            <p>A seção de <strong>Plataformas</strong> oferece uma visão aprofundada das diferentes plataformas de desenvolvimento disponíveis. Desde frameworks populares até ferramentas de desenvolvimento integradas (IDEs), você encontrará análises sobre suas funcionalidades, prós e contras, além de dicas para otimizar sua produtividade.</p>
+        </div>
+        <div class="imagem">
+            <img src="Image/ides.webp" alt="Imagem de plataformas de desenvolvimento">
+        </div>
+    </div>
+
+    <div class="tema">
+        <div class="texto">
+            <h2>Bibliotecas e Ferramentas:</h2>
+            <p>Explore a seção de <strong>Bibliotecas</strong>, onde você encontrará uma lista abrangente de bibliotecas úteis para diversas linguagens de programação. Aprenda como essas bibliotecas podem acelerar o seu desenvolvimento e facilitar a implementação de funcionalidades complexas em seus projetos.</p>
+        </div>
+        <div class="imagem">
+            <img src="Image/bibliotecas.png" alt="Imagem de bibliotecas de programação">
+        </div>
+    </div>
+
+    <div class="tema">
+        <div class="texto">
+            <h2>Quiz de Programação:</h2>
+            <p>Teste seus conhecimentos na seção de <strong>Quiz!</strong> Aqui, você pode desafiar a si mesmo e aos seus amigos com uma série de perguntas sobre programação, lógica e algoritmos. É uma maneira divertida de aprender e revisar os conceitos que você estudou.</p>
+        </div>
+        <div class="imagem">
+            <img style="height: 150px;" src="Image/cerebro.webp" alt="Imagem de quiz de programação">
+        </div>
+    </div>
+
+    <div class="tema">
+        <div class="texto">
+            <h2>Dúvidas e Perguntas Frequentes:</h2>
+            <p>Se você tiver dúvidas ou precisar de mais esclarecimentos, a seção de <strong>Dúvidas</strong> é o lugar certo. Aqui, você pode encontrar respostas para perguntas frequentes, além de dicas de especialistas sobre como resolver problemas comuns de programação.</p>
+        </div>
+        <div class="imagem">
+            <img style="height: 150px;" src="Image/pergunta.webp" alt="Imagem de perguntas frequentes">
+        </div>
+    </div>
+</body>
+</html>
